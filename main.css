@@ -1,0 +1,129 @@
+:root{
+    --dark: #374151
+    --light: #eee
+    --grey: #6b7280
+    --pink: #ec4899
+    --purple: #885cf6
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+    background: lightblue;
+    color: rgb(82, 46, 46);
+
+}
+
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    font-size: 2rem;
+    font-weight: 250;
+    color: rgb(3, 57, 104);
+    margin-bottom:  1rem;
+}
+
+#task_form{
+    display: flex;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input{
+    flex: 1 1 0%;
+    background: rgb(151, 151, 101);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rems;
+    color: rgb(29, 21, 8);
+    font-size: 1.2rem;
+}
+#task-submit{
+    color: blueviolet;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right,
+    rgb(226, 218, 204), orange);
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+#task-submit:hover{
+    opacity: 0.8;
+}
+ 
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:rgb(133, 15, 15);
+    margin-bottom:  1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:darkslategrey;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom:  1rem;
+}
+#tasks .task .content .text{
+    color: olivedrab;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;  
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin:0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.task .actions .edit{
+    background-image: linear-gradient
+    (to right, olivedrab,rgb(30, 44, 2));
+    
+}
+
+.task .actions .delete{
+    color: red;
+}
+
+
+
